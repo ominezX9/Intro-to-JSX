@@ -12,8 +12,28 @@ Create a navbar in JSX:
 
 // Method one
 
-function NavBar(){
-    return(
+// function NavBar(){
+//     return(
+//         <nav>
+//             <h1>LeoRoar</h1>
+//             <ul>
+//                 <li>Pricing</li>
+//                 <li>About</li>
+//                 <li>Contact</li>    
+//             </ul>
+//         </nav>
+//     )
+// }
+
+
+// ReactDOM.render(
+//     <NavBar />
+//     ,
+//     document.querySelector('#root')
+// )
+
+// Method two
+const NavBar = (
         <nav>
             <h1>LeoRoar</h1>
             <ul>
@@ -23,11 +43,10 @@ function NavBar(){
             </ul>
         </nav>
     )
-}
 
 
 ReactDOM.render(
-    <NavBar />
+    NavBar
     ,
     document.querySelector('#root')
 )
